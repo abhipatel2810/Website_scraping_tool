@@ -1,0 +1,32 @@
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python -m playwright install
+
+
+terminal 1
+
+
+cd backend
+copy .env.example .env
+# In .env set:
+# CLIENT_ORIGIN=http://localhost:5173
+# PYTHON_EXE=C:\full\path\to\.venv\Scripts\python.exe   # important on Windows
+npm install
+npm run dev
+
+
+
+
+
+
+
+terminal 2 
+
+
+cd ../frontend
+npm install
+npm run dev
+
+
+
