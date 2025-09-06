@@ -1,4 +1,4 @@
-# Veritas Scraper
+# Website Scraping Tool
 
 Full-site crawler with a React + Tailwind UI and a Node/Express API that runs `site_dump.py`. Saves outputs under `crawl/<jobId>/` and zips the run for download.
 
